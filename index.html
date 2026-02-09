@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chang Thai Massage - Traditional Thai Massage in Warsaw. Professional Thai spa services with authentic techniques.">
+    <meta name="keywords" content="Thai massage, Warsaw massage, spa, traditional massage, นวดไทย">
+    <title>Chang Thai Massage - Authentic Thai Spa in Warsaw</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        :root {
+            --jade-green: #2d5f4d;
+            --jade-light: #4a8f70;
+            --jade-dark: #1a3d2f;
+            --gold: #d4af37;
+            --gold-light: #f4d976;
+            --gold-dark: #b8941f;
+            --cream: #faf8f3;
+            --cream-dark: #f0ebe0;
+            --white: #ffffff;
+            --text-dark: #2c2c2c;
+            --text-light: #666666;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', 'Noto Sans Thai', sans-serif;
+            color: var(--text-dark);
+            background: var(--cream);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', 'Noto Sans Thai', serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            padding: 1rem 5%;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .navbar.scrolled {
+            padding: 0.7rem 5%;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--jade-green);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .logo i {
+            color: var(--gold);
+            font-size: 1.8rem;
+        }
+        
+        .nav-menu {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            align-items: center;
+        }
+        
+        .nav-menu a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+        
+        .nav-menu a:hover {
+            color: var(--jade-green);
+        }
+        
+        .lang-switcher {
+            display: flex;
+            gap: 0.5rem;
+            background: var(--cream-dark);
+            padding: 0.4rem 0.6rem;
+            border-radius: 25px;
+        }
+        
+        .lang-btn {
+            background: transparent;
+            border: none;
+            padding: 0.3rem 0.8rem;
+            cursor: pointer;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+            color: var(--text-light);
+        }
+        
+        .lang-btn.active {
+            background: var(--jade-green);
+            color: white;
+        }
+        
+        .lang-btn:hover {
+            background: var(--jade-light);
+            color: white;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--jade-green);
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, rgba(45, 95, 77, 0.95) 0%, rgba(26, 61, 47, 0.9) 100%),
+                        url('https://img5.pic.in.th/file/secure-sv1/S__2080772_04af0b1489defb3f2.jpg') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            padding: 0 5%;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
+            animation: pulse 8s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.6; }
+        }
+        
+        .hero-content {
+            text-align: center;
+            color: white;
+            max-width: 900px;
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 1s ease;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .hero-subtitle {
+            font-size: 1.1rem;
+            letter-spacing: 3px;
+            color: var(--gold-light);
+            margin-bottom: 1rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            animation: fadeInUp 1s ease 0.2s backwards;
+        }
+        
+        .hero h1 {
+            font-size: 4.5rem;
+            margin-bottom: 1.5rem;
+            color: white;
+            font-weight: 700;
+            letter-spacing: 2px;
+            animation: fadeInUp 1s ease 0.4s backwards;
+        }
+        
+        .hero-tagline {
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+            color: var(--cream);
+            font-weight: 300;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+            animation: fadeInUp 1s ease 0.6s backwards;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease 0.8s backwards;
+        }
+        
+        .btn {
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.7rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-primary {
+            background: var(--gold);
+            color: var(--jade-dark);
+        }
+        
+        .btn-primary:hover {
+            background: var(--gold-light);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(212, 175, 55, 0.4);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: var(--jade-green);
+            transform: translateY(-3px);
+        }
+        
+        /* Decorative Elements */
+        .decoration-circle {
+            position: absolute;
+            border: 2px solid rgba(212, 175, 55, 0.2);
+            border-radius: 50%;
+            animation: rotate 20s linear infinite;
+        }
+        
+        .decoration-circle:nth-child(1) {
+            width: 300px;
+            height: 300px;
+            top: 10%;
+            right: 10%;
+        }
+        
+        .decoration-circle:nth-child(2) {
+            width: 200px;
+            height: 200px;
+            bottom: 15%;
+            left: 15%;
+            animation-duration: 15s;
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Section Styling */
+        section {
+            padding: 6rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            animation: fadeInUp 0.8s ease;
+        }
+        
+        .section-subtitle {
+            color: var(--gold);
+            font-size: 0.95rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .section-title {
+            font-size: 3rem;
+            color: var(--jade-green);
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-description {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        
+        /* About Section */
+        .about {
+            background: white;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .about-image {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .about-image::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            bottom: 20px;
+            left: 20px;
+            border: 3px solid var(--gold);
+            border-radius: 15px;
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        
+        .about-image:hover::before {
+            opacity: 1;
+        }
+        
+        .about-text h2 {
+            font-size: 2.5rem;
+            color: var(--jade-green);
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-text p {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        
+        .feature-item i {
+            color: var(--gold);
+            font-size: 1.5rem;
+            margin-top: 0.3rem;
+        }
+        
+        .feature-item h4 {
+            color: var(--jade-green);
+            margin-bottom: 0.3rem;
+            font-size: 1.1rem;
+        }
+        
+        .feature-item p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin: 0;
+        }
+        
+        /* Services Section */
+        .services {
+            background: var(--cream);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+        }
+        
+        .service-header {
+            background: linear-gradient(135deg, var(--jade-green), var(--jade-light));
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: shimmer 3s ease-in-out infinite;
+        }
+        
+        @keyframes shimmer {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(-30%, -30%); }
+        }
+        
+        .service-header i {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+        
+        .service-header h3 {
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .service-body {
+            padding: 2rem;
+        }
+        
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--cream-dark);
+        }
+        
+        .price-item:last-child {
+            border-bottom: none;
+        }
+        
+        .price-duration {
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 1.05rem;
+        }
+        
+        .price-amount {
+            color: var(--gold-dark);
+            font-weight: 700;
+            font-size: 1.3rem;
+        }
+        
+        /* Gallery Section */
+        .gallery {
+            background: white;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            cursor: pointer;
+            aspect-ratio: 4/3;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to top, rgba(45, 95, 77, 0.7) 0%, transparent 50%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+        
+        .gallery-item:hover::before {
+            opacity: 1;
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            color: white;
+            z-index: 2;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 10000;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .lightbox.active {
+            display: flex;
+        }
+        
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+            position: relative;
+        }
+        
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 90vh;
+            border-radius: 10px;
+            box-shadow: 0 20px 80px rgba(0, 0, 0, 0.5);
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .lightbox-close:hover {
+            transform: rotate(90deg);
+        }
+        
+        /* Location Section */
+        .location {
+            background: var(--cream);
+        }
+        
+        .location-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .location-info {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+        
+        .location-info h3 {
+            color: var(--jade-green);
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--cream-dark);
+        }
+        
+        .info-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .info-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--jade-green), var(--jade-light));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .info-icon i {
+            color: var(--gold);
+            font-size: 1.3rem;
+        }
+        
+        .info-content h4 {
+            color: var(--jade-green);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .info-content p {
+            color: var(--text-light);
+            margin: 0;
+            line-height: 1.6;
+        }
+        
+        .location-map {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            height: 500px;
+        }
+        
+        .location-map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background: white;
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .contact-card {
+            background: var(--cream);
+            padding: 2rem;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-card-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--jade-green), var(--jade-light));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .contact-card-icon i {
+            color: var(--gold);
+            font-size: 1.5rem;
+        }
+        
+        .contact-card-content h4 {
+            color: var(--jade-green);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .contact-card-content p {
+            margin: 0;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+        
+        .contact-card-content a {
+            color: var(--text-dark);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-card-content a:hover {
+            color: var(--jade-green);
+        }
+        
+        .contact-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .contact-btn {
+            flex: 1;
+            padding: 1rem;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .btn-call {
+            background: var(--gold);
+            color: var(--jade-dark);
+        }
+        
+        .btn-call:hover {
+            background: var(--gold-light);
+            transform: translateY(-2px);
+        }
+        
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+        }
+        
+        .btn-whatsapp:hover {
+            background: #20ba5a;
+            transform: translateY(-2px);
+        }
+        
+        .contact-form {
+            background: var(--cream);
+            padding: 3rem;
+            border-radius: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--jade-green);
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--cream-dark);
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--jade-green);
+            box-shadow: 0 0 0 4px rgba(45, 95, 77, 0.1);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        
+        .form-submit {
+            width: 100%;
+            padding: 1rem 2rem;
+            background: var(--jade-green);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .form-submit:hover {
+            background: var(--jade-light);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(45, 95, 77, 0.3);
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--jade-dark);
+            color: var(--cream);
+            padding: 4rem 5% 2rem;
+        }
+        
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-section h3 {
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+        }
+        
+        .footer-section p,
+        .footer-section li {
+            color: var(--cream-dark);
+            line-height: 1.8;
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section a {
+            color: var(--cream-dark);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: var(--gold);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-link {
+            width: 45px;
+            height: 45px;
+            background: rgba(212, 175, 55, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background: var(--gold);
+            color: var(--jade-dark);
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            color: var(--cream-dark);
+        }
+        
+        /* Floating Call Button */
+        .floating-call {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 25px rgba(212, 175, 55, 0.5);
+            cursor: pointer;
+            z-index: 999;
+            animation: pulse-ring 2s ease-in-out infinite;
+            text-decoration: none;
+        }
+        
+        .floating-call i {
+            color: var(--jade-dark);
+            font-size: 1.5rem;
+        }
+        
+        @keyframes pulse-ring {
+            0% {
+                box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7),
+                           0 5px 25px rgba(212, 175, 55, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 0 20px rgba(212, 175, 55, 0),
+                           0 5px 25px rgba(212, 175, 55, 0.5);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(212, 175, 55, 0),
+                           0 5px 25px rgba(212, 175, 55, 0.5);
+            }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 968px) {
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                flex-direction: column;
+                background: white;
+                width: 100%;
+                padding: 2rem;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                transition: left 0.3s ease;
+                gap: 1.5rem;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .about-content,
+            .location-container,
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-tagline {
+                font-size: 1rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .about-features {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Utility Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-spa"></i>
+                <span>Chang Thai Massage</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" data-translate="nav_home">Home</a></li>
+                <li><a href="#about" data-translate="nav_about">About</a></li>
+                <li><a href="#services" data-translate="nav_services">Services</a></li>
+                <li><a href="#gallery" data-translate="nav_gallery">Gallery</a></li>
+                <li><a href="#location" data-translate="nav_location">Location</a></li>
+                <li><a href="#contact" data-translate="nav_contact">Contact</a></li>
+                <li class="lang-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="th">TH</button>
+                    <button class="lang-btn" data-lang="pl">PL</button>
+                </li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="decoration-circle"></div>
+        <div class="decoration-circle"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle" data-translate="hero_subtitle">Authentic Thai Experience</p>
+            <h1>Chang Thai Massage</h1>
+            <p class="hero-tagline" data-translate="hero_tagline">Experience the healing art of traditional Thai massage in the heart of Warsaw. Relax, restore, and rejuvenate your body and mind.</p>
+            <div class="hero-buttons">
+                <a href="tel:+48575628998" class="btn btn-primary">
+                    <i class="fas fa-phone"></i>
+                    <span data-translate="hero_btn_call">Call Now</span>
+                </a>
+                <a href="#services" class="btn btn-secondary">
+                    <i class="fas fa-spa"></i>
+                    <span data-translate="hero_btn_services">View Services</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about fade-in" id="about">
+        <div class="section-header">
+            <p class="section-subtitle" data-translate="about_subtitle">About Us</p>
+            <h2 class="section-title" data-translate="about_title">Authentic Thai Massage Experience</h2>
+            <p class="section-description" data-translate="about_description">At Chang Thai Massage, we bring the ancient healing traditions of Thailand to Warsaw. Our skilled therapists are trained in authentic Thai massage techniques.</p>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="https://img2.pic.in.th/S__2080773_0.jpg" alt="Chang Thai Massage Interior">
+            </div>
+            <div class="about-text">
+                <h2 data-translate="about_heading">Welcome to Chang Thai Massage</h2>
+                <p data-translate="about_text1">We are a professional Thai massage spa located in Warsaw, Poland. Our mission is to provide authentic Thai massage experiences that promote wellness, relaxation, and healing.</p>
+                <p data-translate="about_text2">Our therapists are highly trained in traditional Thai massage techniques, combining ancient wisdom with modern comfort to deliver exceptional service.</p>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <i class="fas fa-certificate"></i>
+                        <div>
+                            <h4 data-translate="feature1_title">Professional Team</h4>
+                            <p data-translate="feature1_desc">Certified Thai massage therapists</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-heart"></i>
+                        <div>
+                            <h4 data-translate="feature2_title">Authentic Techniques</h4>
+                            <p data-translate="feature2_desc">Traditional Thai massage methods</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-star"></i>
+                        <div>
+                            <h4 data-translate="feature3_title">Premium Service</h4>
+                            <p data-translate="feature3_desc">Luxury spa atmosphere</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-leaf"></i>
+                        <div>
+                            <h4 data-translate="feature4_title">Natural Products</h4>
+                            <p data-translate="feature4_desc">High-quality oils and balms</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services fade-in" id="services">
+        <div class="section-header">
+            <p class="section-subtitle" data-translate="services_subtitle">Our Services</p>
+            <h2 class="section-title" data-translate="services_title">Massage Treatments & Pricing</h2>
+            <p class="section-description" data-translate="services_description">Choose from our range of traditional Thai massage services, each designed to address specific needs and promote overall wellness.</p>
+        </div>
+        <div class="services-grid">
+            <!-- Service 1 -->
+            <div class="service-card">
+                <div class="service-header">
+                    <i class="fas fa-hands"></i>
+                    <h3 data-translate="service1_name">Traditional Thai Massage</h3>
+                </div>
+                <div class="service-body">
+                    <div class="price-item">
+                        <span class="price-duration">60 <span data-translate="minutes">min</span></span>
+                        <span class="price-amount">180 zł</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-duration">90 <span data-translate="minutes">min</span></span>
+                        <span class="price-amount">220 zł</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-duration">120 <span data-translate="minutes">min</span></span>
+                        <span class="price-amount">250 zł</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card">
+                <div class="service-header">
+                    <i class="fas fa-wind"></i>
+                    <h3 data-translate="service2_name">Thai Balm Massage</h3>
+                </div>
+                <div class="service-body">
+                    <div class="price-item">
+                        <span class="price-duration">60 <span data-translate="minutes">min</span></span>
+                        <span class="price-amount">200 zł</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-duration">90 <span data-translate="minutes">min</span></span>
+                        <span class="price-amount">250 zł</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-duration">120 <span data-translate="minutes">min</span></span>
+                        <span class="price-amount">280 zł</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card">
+                <div class="service-header">
+                    <i class="fas fa-oil-can"></i>
+                    <h3 data-translate="service3_name">Thai Oil Massage (Unscented)</h3>
+                </div>
+                <div class="service-body">
+                    <div class="price-item">
+                        <span class="price-duration">60 <span data-translate="minutes">min</span></span>
+                        <span class="price-amount">200 zł</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-duration">90 <span data-translate="minutes">min</span></span>
+                        <span class="price-amount">250 zł</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-duration">120 <span data-translate="minutes">min</span></span>
+                        <span class="price-amount">280 zł</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card">
+                <div class="service-header">
+                    <i class="fas fa-seedling"></i>
+                    <h3 data-translate="service4_name">Coconut Oil Massage</h3>
+                </div>
+                <div class="service-body">
+                    <div class="price-item">
+                        <span class="price-duration">60 <span data-translate="minutes">min</span></span>
+                        <span class="price-amount">200 zł</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-duration">90 <span data-translate="minutes">min</span></span>
+                        <span class="price-amount">250 zł</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-duration">120 <span data-translate="minutes">min</span></span>
+                        <span class="price-amount">280 zł</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-card">
+                <div class="service-header">
+                    <i class="fas fa-fire"></i>
+                    <h3 data-translate="service5_name">Aromatic Candle Massage</h3>
+                </div>
+                <div class="service-body">
+                    <div class="price-item">
+                        <span class="price-duration">60 <span data-translate="minutes">min</span></span>
+                        <span class="price-amount">220 zł</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-duration">90 <span data-translate="minutes">min</span></span>
+                        <span class="price-amount">250 zł</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-duration">120 <span data-translate="minutes">min</span></span>
+                        <span class="price-amount">300 zł</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="service-card">
+                <div class="service-header">
+                    <i class="fas fa-running"></i>
+                    <h3 data-translate="service6_name">Sports Thai Massage</h3>
+                </div>
+                <div class="service-body">
+                    <div class="price-item">
+                        <span class="price-duration">60 <span data-translate="minutes">min</span></span>
+                        <span class="price-amount">220 zł</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-duration">90 <span data-translate="minutes">min</span></span>
+                        <span class="price-amount">250 zł</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-duration">120 <span data-translate="minutes">min</span></span>
+                        <span class="price-amount">300 zł</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 7 -->
+            <div class="service-card">
+                <div class="service-header">
+                    <i class="fas fa-user-circle"></i>
+                    <h3 data-translate="service7_name">Back, Shoulders & Head</h3>
+                </div>
+                <div class="service-body">
+                    <div class="price-item">
+                        <span class="price-duration">30 <span data-translate="minutes">min</span></span>
+                        <span class="price-amount">180 zł</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-duration">60 <span data-translate="minutes">min</span></span>
+                        <span class="price-amount">200 zł</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 8 -->
+            <div class="service-card">
+                <div class="service-header">
+                    <i class="fas fa-head-side-mask"></i>
+                    <h3 data-translate="service8_name">Face & Head Massage</h3>
+                </div>
+                <div class="service-body">
+                    <div class="price-item">
+                        <span class="price-duration">60 <span data-translate="minutes">min</span></span>
+                        <span class="price-amount">200 zł</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-duration">75 <span data-translate="minutes">min</span></span>
+                        <span class="price-amount">250 zł</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 9 -->
+            <div class="service-card">
+                <div class="service-header">
+                    <i class="fas fa-socks"></i>
+                    <h3 data-translate="service9_name">Foot & Leg Massage</h3>
+                </div>
+                <div class="service-body">
+                    <div class="price-item">
+                        <span class="price-duration">30 <span data-translate="minutes">min</span></span>
+                        <span class="price-amount">100 zł</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-duration">60 <span data-translate="minutes">min</span></span>
+                        <span class="price-amount">180 zł</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery fade-in" id="gallery">
+        <div class="section-header">
+            <p class="section-subtitle" data-translate="gallery_subtitle">Gallery</p>
+            <h2 class="section-title" data-translate="gallery_title">Our Spa & Facilities</h2>
+            <p class="section-description" data-translate="gallery_description">Take a virtual tour of our beautiful spa and see where relaxation meets luxury.</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-image="https://img5.pic.in.th/file/secure-sv1/S__2080772_04af0b1489defb3f2.jpg">
+                <img src="https://img5.pic.in.th/file/secure-sv1/S__2080772_04af0b1489defb3f2.jpg" alt="Chang Thai Massage Gallery 1">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="https://img2.pic.in.th/S__2080773_0.jpg">
+                <img src="https://img2.pic.in.th/S__2080773_0.jpg" alt="Chang Thai Massage Gallery 2">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="https://img5.pic.in.th/file/secure-sv1/S__2080774_0.jpg">
+                <img src="https://img5.pic.in.th/file/secure-sv1/S__2080774_0.jpg" alt="Chang Thai Massage Gallery 3">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="https://img2.pic.in.th/S__2080775_0ced599b1feeff418.jpg">
+                <img src="https://img2.pic.in.th/S__2080775_0ced599b1feeff418.jpg" alt="Chang Thai Massage Gallery 4">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="https://img2.pic.in.th/S__2080776_064f070d725b49206.jpg">
+                <img src="https://img2.pic.in.th/S__2080776_064f070d725b49206.jpg" alt="Chang Thai Massage Gallery 5">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="https://img5.pic.in.th/file/secure-sv1/S__2080777_0.jpg">
+                <img src="https://img5.pic.in.th/file/secure-sv1/S__2080777_0.jpg" alt="Chang Thai Massage Gallery 6">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="https://img2.pic.in.th/S__2080780_0df7ff6552d161421.jpg">
+                <img src="https://img2.pic.in.th/S__2080780_0df7ff6552d161421.jpg" alt="Chang Thai Massage Gallery 7">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="https://img5.pic.in.th/file/secure-sv1/S__2080781_068bc268110721771.jpg">
+                <img src="https://img5.pic.in.th/file/secure-sv1/S__2080781_068bc268110721771.jpg" alt="Chang Thai Massage Gallery 8">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="https://img2.pic.in.th/S__2080783_00a14b459b94b2218.jpg">
+                <img src="https://img2.pic.in.th/S__2080783_00a14b459b94b2218.jpg" alt="Chang Thai Massage Gallery 9">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="https://img5.pic.in.th/file/secure-sv1/S__2080784_0.jpg">
+                <img src="https://img5.pic.in.th/file/secure-sv1/S__2080784_0.jpg" alt="Chang Thai Massage Gallery 10">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="https://img2.pic.in.th/S__2080785_0.jpg">
+                <img src="https://img2.pic.in.th/S__2080785_0.jpg" alt="Chang Thai Massage Gallery 11">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="https://img5.pic.in.th/file/secure-sv1/S__2080786_0757d0d9a9d1be012.jpg">
+                <img src="https://img5.pic.in.th/file/secure-sv1/S__2080786_0757d0d9a9d1be012.jpg" alt="Chang Thai Massage Gallery 12">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="https://img2.pic.in.th/S__2080787_0.jpg">
+                <img src="https://img2.pic.in.th/S__2080787_0.jpg" alt="Chang Thai Massage Gallery 13">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="https://img5.pic.in.th/file/secure-sv1/S__115343365_02773ee0e410209fd.jpg">
+                <img src="https://img5.pic.in.th/file/secure-sv1/S__115343365_02773ee0e410209fd.jpg" alt="Chang Thai Massage Gallery 14">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <img src="" alt="Gallery Image" id="lightboxImage">
+        </div>
+    </div>
+
+    <!-- Location Section -->
+    <section class="location fade-in" id="location">
+        <div class="section-header">
+            <p class="section-subtitle" data-translate="location_subtitle">Find Us</p>
+            <h2 class="section-title" data-translate="location_title">Visit Our Spa</h2>
+            <p class="section-description" data-translate="location_description">Located in the heart of Warsaw, we're easy to reach and ready to welcome you.</p>
+        </div>
+        <div class="location-container">
+            <div class="location-info">
+                <h3 data-translate="location_info_title">Location Information</h3>
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4 data-translate="location_address_title">Address</h4>
+                        <p>Biograficzna 1<br>01-991 Warszawa<br>Poland</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4 data-translate="location_hours_title">Opening Hours</h4>
+                        <p data-translate="location_hours_text">Open Daily: 11:00 - 21:00<br>Closed on Mondays</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4 data-translate="location_phone_title">Phone</h4>
+                        <p><a href="tel:+48575628998">+48 575 628 998</a></p>
+                    </div>
+                </div>
+                <a href="https://maps.app.goo.gl/GwCxp2fRuGrPcnFt5" target="_blank" class="btn btn-primary" style="margin-top: 1.5rem; display: inline-flex;">
+                    <i class="fas fa-directions"></i>
+                    <span data-translate="location_directions">Get Directions</span>
+                </a>
+            </div>
+            <div class="location-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2442.7654321!2d20.9876543!3d52.2543210!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDE1JzE1LjYiTiAyMMKwNTknMTUuNiJF!5e0!3m2!1sen!2spl!4v1234567890"
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact fade-in" id="contact">
+        <div class="section-header">
+            <p class="section-subtitle" data-translate="contact_subtitle">Get In Touch</p>
+            <h2 class="section-title" data-translate="contact_title">Contact Us</h2>
+            <p class="section-description" data-translate="contact_description">Have questions or want to book an appointment? We'd love to hear from you.</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-card-content">
+                        <h4 data-translate="contact_phone_title">Call Us</h4>
+                        <p><a href="tel:+48575628998">+48 575 628 998</a></p>
+                        <div class="contact-buttons">
+                            <a href="tel:+48575628998" class="contact-btn btn-call">
+                                <i class="fas fa-phone"></i>
+                                <span data-translate="contact_call">Call Now</span>
+                            </a>
+                            <a href="https://wa.me/48575628998" target="_blank" class="contact-btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-card-content">
+                        <h4 data-translate="contact_visit_title">Visit Us</h4>
+                        <p>Biograficzna 1<br>01-991 Warszawa, Poland</p>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-card-content">
+                        <h4 data-translate="contact_hours_title">Opening Hours</h4>
+                        <p data-translate="contact_hours_text">Open Daily: 11:00 - 21:00<br>Closed on Mondays</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3 data-translate="contact_form_title">Send Us a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name" data-translate="form_name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-translate="form_email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" data-translate="form_phone">Phone</label>
+                        <input type="tel" id="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-translate="form_message">Message</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">
+                        <span data-translate="form_submit">Send Message</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Chang Thai Massage</h3>
+                <p data-translate="footer_about">Experience authentic Thai massage in the heart of Warsaw. Professional service, traditional techniques, and a peaceful atmosphere.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/48575628998" target="_blank" class="social-link" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://maps.app.goo.gl/GwCxp2fRuGrPcnFt5" target="_blank" class="social-link" aria-label="Google Maps">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3 data-translate="footer_hours_title">Opening Hours</h3>
+                <ul>
+                    <li data-translate="footer_hours_1">Tuesday - Sunday: 11:00 - 21:00</li>
+                    <li data-translate="footer_hours_2">Monday: Closed</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3 data-translate="footer_contact_title">Contact</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+48575628998">+48 575 628 998</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Biograficzna 1, Warsaw</li>
+                    <li><i class="fas fa-map"></i> <a href="https://maps.app.goo.gl/GwCxp2fRuGrPcnFt5" target="_blank" data-translate="footer_map">View on Map</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3 data-translate="footer_services_title">Quick Links</h3>
+                <ul>
+                    <li><a href="#about" data-translate="footer_link_about">About Us</a></li>
+                    <li><a href="#services" data-translate="footer_link_services">Services</a></li>
+                    <li><a href="#gallery" data-translate="footer_link_gallery">Gallery</a></li>
+                    <li><a href="#contact" data-translate="footer_link_contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Chang Thai Massage. <span data-translate="footer_rights">All rights reserved.</span></p>
+        </div>
+    </footer>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+48575628998" class="floating-call" aria-label="Call Us">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
