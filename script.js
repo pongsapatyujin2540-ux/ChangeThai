@@ -6,6 +6,7 @@ const translations = {
         nav_about: "About",
         nav_services: "Services",
         nav_gallery: "Gallery",
+        nav_booking: "Booking",
         nav_location: "Location",
         nav_contact: "Contact",
         
@@ -66,6 +67,36 @@ const translations = {
         contact_subtitle: "Get In Touch",
         contact_title: "Contact Us",
         contact_description: "Have questions or want to book an appointment? We'd love to hear from you.",
+        
+        // Booking Section
+        booking_subtitle: "Book Now",
+        booking_title: "Online Booking",
+        booking_description: "Book your massage appointment online. Fill in the form and we'll confirm via WhatsApp.",
+        step1_title: "Choose Service",
+        step1_desc: "Select your preferred massage type and duration",
+        step2_title: "Select Date & Time",
+        step2_desc: "Pick your preferred appointment time",
+        step3_title: "Confirm via WhatsApp",
+        step3_desc: "We'll confirm your booking instantly",
+        benefits_title: "Why Book Online?",
+        benefit1: "Instant confirmation",
+        benefit2: "No phone calls needed",
+        benefit3: "Choose your preferred time",
+        benefit4: "24/7 booking available",
+        booking_form_title: "Book Your Appointment",
+        booking_name: "Your Name *",
+        booking_phone: "Phone Number *",
+        booking_email: "Email (Optional)",
+        booking_service: "Select Service *",
+        select_service: "-- Select Service --",
+        booking_date: "Preferred Date *",
+        booking_time: "Preferred Time *",
+        select_time: "-- Select Time --",
+        booking_notes: "Special Requests (Optional)",
+        booking_submit: "Book via WhatsApp",
+        booking_notice: "By clicking the button, you'll be redirected to WhatsApp to confirm your booking.",
+        
+        // Contact Section Continued
         contact_phone_title: "Call Us",
         contact_call: "Call Now",
         contact_visit_title: "Visit Us",
@@ -99,6 +130,7 @@ const translations = {
         nav_about: "เกี่ยวกับ",
         nav_services: "บริการ",
         nav_gallery: "แกลเลอรี",
+        nav_booking: "จองเลย",
         nav_location: "สถานที่",
         nav_contact: "ติดต่อ",
         
@@ -159,6 +191,36 @@ const translations = {
         contact_subtitle: "ติดต่อเรา",
         contact_title: "ติดต่อเรา",
         contact_description: "มีคำถามหรือต้องการจองนัดหมาย? เรายินดีรับฟังจากคุณ",
+        
+        // Booking Section
+        booking_subtitle: "จองเลย",
+        booking_title: "จองออนไลน์",
+        booking_description: "จองนัดหมายนวดออนไลน์ กรอกฟอร์มแล้วเราจะยืนยันผ่าน WhatsApp",
+        step1_title: "เลือกบริการ",
+        step1_desc: "เลือกประเภทการนวดและระยะเวลาที่ต้องการ",
+        step2_title: "เลือกวันและเวลา",
+        step2_desc: "เลือกวันเวลาที่สะดวก",
+        step3_title: "ยืนยันผ่าน WhatsApp",
+        step3_desc: "เราจะยืนยันการจองให้ทันที",
+        benefits_title: "ทำไมต้องจองออนไลน์?",
+        benefit1: "ยืนยันทันที",
+        benefit2: "ไม่ต้องโทร",
+        benefit3: "เลือกเวลาได้เอง",
+        benefit4: "จองได้ตลอด 24 ชั่วโมง",
+        booking_form_title: "จองนัดหมายของคุณ",
+        booking_name: "ชื่อ-นามสกุล *",
+        booking_phone: "เบอร์โทรศัพท์ *",
+        booking_email: "อีเมล (ไม่บังคับ)",
+        booking_service: "เลือกบริการ *",
+        select_service: "-- เลือกบริการ --",
+        booking_date: "วันที่ต้องการ *",
+        booking_time: "เวลาที่ต้องการ *",
+        select_time: "-- เลือกเวลา --",
+        booking_notes: "ความต้องการพิเศษ (ไม่บังคับ)",
+        booking_submit: "จองผ่าน WhatsApp",
+        booking_notice: "เมื่อคลิกปุ่ม คุณจะถูกนำไปยัง WhatsApp เพื่อยืนยันการจอง",
+        
+        // Contact Section Continued
         contact_phone_title: "โทรหาเรา",
         contact_call: "โทรเลย",
         contact_visit_title: "มาเยี่ยมเรา",
@@ -192,6 +254,7 @@ const translations = {
         nav_about: "O nas",
         nav_services: "Usługi",
         nav_gallery: "Galeria",
+        nav_booking: "Rezerwacja",
         nav_location: "Lokalizacja",
         nav_contact: "Kontakt",
         
@@ -252,6 +315,36 @@ const translations = {
         contact_subtitle: "Skontaktuj się",
         contact_title: "Skontaktuj się z nami",
         contact_description: "Masz pytania lub chcesz umówić się na wizytę? Chętnie od Ciebie usłyszymy.",
+        
+        // Booking Section
+        booking_subtitle: "Rezerwuj teraz",
+        booking_title: "Rezerwacja online",
+        booking_description: "Zarezerwuj wizytę masażu online. Wypełnij formularz, a my potwierdzimy przez WhatsApp.",
+        step1_title: "Wybierz usługę",
+        step1_desc: "Wybierz preferowany rodzaj masażu i czas trwania",
+        step2_title: "Wybierz datę i godzinę",
+        step2_desc: "Wybierz preferowaną godzinę wizyty",
+        step3_title: "Potwierdź przez WhatsApp",
+        step3_desc: "Potwierdzimy rezerwację natychmiast",
+        benefits_title: "Dlaczego rezerwować online?",
+        benefit1: "Natychmiastowe potwierdzenie",
+        benefit2: "Bez konieczności dzwonienia",
+        benefit3: "Wybierz preferowaną godzinę",
+        benefit4: "Rezerwacja dostępna 24/7",
+        booking_form_title: "Zarezerwuj wizytę",
+        booking_name: "Imię i nazwisko *",
+        booking_phone: "Numer telefonu *",
+        booking_email: "E-mail (Opcjonalnie)",
+        booking_service: "Wybierz usługę *",
+        select_service: "-- Wybierz usługę --",
+        booking_date: "Preferowana data *",
+        booking_time: "Preferowana godzina *",
+        select_time: "-- Wybierz godzinę --",
+        booking_notes: "Specjalne życzenia (Opcjonalnie)",
+        booking_submit: "Rezerwuj przez WhatsApp",
+        booking_notice: "Klikając przycisk, zostaniesz przekierowany do WhatsApp w celu potwierdzenia rezerwacji.",
+        
+        // Contact Section Continued
         contact_phone_title: "Zadzwoń do nas",
         contact_call: "Zadzwoń teraz",
         contact_visit_title: "Odwiedź nas",
@@ -381,6 +474,67 @@ contactForm.addEventListener('submit', (e) => {
           currentLang === 'th' ? 'กำลังเปลี่ยนเส้นทางไปยัง WhatsApp...' : 
           'Przekierowywanie do WhatsApp...');
 });
+
+// Booking form submission
+const bookingForm = document.getElementById('bookingForm');
+if (bookingForm) {
+    bookingForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // Get form values
+        const name = document.getElementById('bookingName').value;
+        const phone = document.getElementById('bookingPhone').value;
+        const email = document.getElementById('bookingEmail').value || 'Not provided';
+        const service = document.getElementById('bookingService').value;
+        const date = document.getElementById('bookingDate').value;
+        const time = document.getElementById('bookingTime').value;
+        const notes = document.getElementById('bookingNotes').value || 'None';
+        
+        // Format date
+        const dateObj = new Date(date);
+        const formattedDate = dateObj.toLocaleDateString('en-GB', { 
+            weekday: 'long', 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+        });
+        
+        // Create WhatsApp booking message
+        const bookingMessage = `🌿 *NEW BOOKING REQUEST* 🌿\n\n` +
+            `👤 *Name:* ${name}\n` +
+            `📞 *Phone:* ${phone}\n` +
+            `📧 *Email:* ${email}\n\n` +
+            `💆 *Service:* ${service}\n` +
+            `📅 *Date:* ${formattedDate}\n` +
+            `🕐 *Time:* ${time}\n\n` +
+            `📝 *Special Requests:*\n${notes}\n\n` +
+            `Please confirm my booking. Thank you! 🙏`;
+        
+        const whatsappURL = `https://wa.me/48575628998?text=${encodeURIComponent(bookingMessage)}`;
+        
+        // Open WhatsApp
+        window.open(whatsappURL, '_blank');
+        
+        // Reset form
+        bookingForm.reset();
+        
+        // Show success message
+        const successMsg = currentLang === 'en' ? 
+            '✅ Redirecting to WhatsApp to confirm your booking!' : 
+            currentLang === 'th' ? 
+            '✅ กำลังเปิด WhatsApp เพื่อยืนยันการจอง!' : 
+            '✅ Przekierowanie do WhatsApp w celu potwierdzenia rezerwacji!';
+        
+        alert(successMsg);
+    });
+}
+
+// Set minimum date for booking (today)
+const bookingDateInput = document.getElementById('bookingDate');
+if (bookingDateInput) {
+    const today = new Date().toISOString().split('T')[0];
+    bookingDateInput.setAttribute('min', today);
+}
 
 // Fade-in animation on scroll
 const fadeElements = document.querySelectorAll('.fade-in');
