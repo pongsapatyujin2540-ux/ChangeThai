@@ -12,7 +12,7 @@ const translations = {
         
         // Hero Section
         hero_subtitle: "Authentic Thai Experience",
-        hero_tagline: "Experience the healing art of traditional Thai massage in the heart of Warsaw. Relax, restore, and rejuvenate your body and mind.",
+        hero_tagline: "Discover the art of traditional Thai ,assage. Relax, rejuvenate, and refresh your body and mind.",
         hero_btn_call: "Call Now",
         hero_btn_services: "View Services",
         
@@ -21,7 +21,7 @@ const translations = {
         about_title: "Authentic Thai Massage Experience",
         about_description: "At Chang Thai Massage, we bring the ancient healing traditions of Thailand to Warsaw. Our skilled therapists are trained in authentic Thai massage techniques.",
         about_heading: "Welcome to Chang Thai Massage",
-        about_text1: "We are a professional Thai massage spa located in Warsaw, Poland. Our mission is to provide authentic Thai massage experiences that promote wellness, relaxation, and healing.",
+        about_text1: "We are a professional Thai massage spa located in Warsaw, Poland. Our mission is to provide authentic Thai massage experiences that promote wellness and relaxation.",
         about_text2: "Our therapists are highly trained in traditional Thai massage techniques, combining ancient wisdom with modern comfort to deliver exceptional service.",
         feature1_title: "Professional Team",
         feature1_desc: "Certified Thai massage therapists",
@@ -49,8 +49,8 @@ const translations = {
         
         // Gallery Section
         gallery_subtitle: "Gallery",
-        gallery_title: "Our Spa & Facilities",
-        gallery_description: "Take a virtual tour of our beautiful spa and see where relaxation meets luxury.",
+        gallery_title: "Our Massage Salon & Facilities",
+        gallery_description: "We invite you to take a virtual tour of our Chang Thai massage salon.",
         
         // Location Section
         location_subtitle: "Find Us",
