@@ -35,7 +35,7 @@ const translations = {
         // Services Section
         services_subtitle: "Our Services",
         services_title: "Massage Treatments & Pricing",
-        services_description: "Choose from our range of traditional Thai massage services, each designed to address specific needs and promote overall wellness.",
+        services_description: "Happy Hour from Tuesday to Friday from 11:00 - 15:00 15% DISCOUNT.",
         service1_name: "Traditional Thai Massage",
         service2_name: "Thai Balm Massage",
         service3_name: "Thai Oil Massage (Unscented)",
@@ -55,7 +55,7 @@ const translations = {
         // Location Section
         location_subtitle: "Find Us",
         location_title: "Visit Our Spa",
-        location_description: "Located in the heart of Warsaw, we're easy to reach and ready to welcome you.",
+        location_description: "We are located in Warsaw's Mlociny distric, easily accessible and ready to welcome you.",
         location_info_title: "Location Information",
         location_address_title: "Address",
         location_hours_title: "Opening Hours",
