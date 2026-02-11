@@ -54,7 +54,7 @@ const translations = {
         
         // Location Section
         location_subtitle: "Find Us",
-        location_title: "Visit Our Spa",
+        location_title: "Visit Our Salon & Facilities",
         location_description: "We are located in Warsaw's Mlociny distric, easily accessible and ready to welcome you.",
         location_info_title: "Location Information",
         location_address_title: "Address",
